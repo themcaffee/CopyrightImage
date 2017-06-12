@@ -1,2 +1,4 @@
 *.jpg
 *.png
+!example.jpg
+!example-cc.jpg
