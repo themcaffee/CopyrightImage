@@ -1,4 +1,4 @@
-# CopyrightImage
+# Copyright Image
 
 Easily add an unobtrusive copyright text to an image. Requires imagemagick to be installed.
 
