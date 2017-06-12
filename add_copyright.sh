@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Verify parameters exist
-if [[ $# -eq 0 ]]
+if [[ $# -lt 2 ]]
 then
 	echo 'Usage: ./add_copyright.sh {image} "COPYRIGHT TEXT"'
 	exit 1
