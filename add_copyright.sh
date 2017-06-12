@@ -11,7 +11,7 @@ PLACEMENT="southeast"
 TEXT_SIZE="20"
 INPUT_IMAGE="$1"
 BASE=${INPUT_IMAGE%.*}
-OUTPUT_IMAGE="$BASE-cc.jpg"
+OUTPUT_IMAGE="output/$BASE-cc.jpg"
 COPYRIGHT_TEXT="$2"
 
 # Create the copyright text image
@@ -27,6 +27,6 @@ composite -compose CopyOpacity  stamp_mask.png  stamp_fgnd.png  stamp.png
 mogrify -trim +repage stamp.png
 
 # Add the text to the given image
-composite -gravity $PLACEMENT -geometry +5+10 stamp.png $INPUT_IMAGE $OUTPUT_IMAGE
+composite -gravity $PLACEMENT -geometry +5+5 stamp.png $INPUT_IMAGE $OUTPUT_IMAGE
 
 echo "Output at $OUTPUT_IMAGE"
