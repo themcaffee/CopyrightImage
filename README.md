@@ -8,5 +8,5 @@ Easily add an unobtrusive copyright text to an image. Requires imagemagick to be
 
 
 ``` bash
-./add_copyright example.jpg "COPYRIGHT TEXT"
+./add_copyright "COPYRIGHT TEXT" example.jpg
 ```
